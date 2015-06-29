@@ -36,8 +36,9 @@ set number
 set cursorline
 set showcmd
 set background=dark
-colorscheme solarized
-
+"colorscheme solarized
+set statusline+=%F
+set laststatus=2
 " Add highlighting for function definition in C++
 function! EnhanceCppSyntax()
     syn match cppFuncDef "::\~\?\zs\h\w*\ze([^)]*\()\s*\(const\)\?\)\?$"
