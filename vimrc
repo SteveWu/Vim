@@ -15,7 +15,8 @@ Plugin 'szw/vim-ctrlspace'
 Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdcommenter'
+Plugin 'vimwiki/vimwiki'
+Plugin 'itchyny/calendar.vim'
 "Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
@@ -41,6 +42,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height = 2
 
 " Vim-bookmarks configuration options
 " let g:bookmark_auto_save_file="~/.vim-bookmarks-list"
@@ -91,3 +93,4 @@ function RangerExplorer()
 	    redraw!
 endfun
 map <Leader>x :call RangerExplorer()<CR>
+nnoremap <Leader>i :%s///g<CR>
