@@ -17,6 +17,7 @@ Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'vimwiki/vimwiki'
 Plugin 'itchyny/calendar.vim'
+"Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
