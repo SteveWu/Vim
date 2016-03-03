@@ -20,7 +20,8 @@ Plugin 'itchyny/calendar.vim'
 "Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
-
+" PyClewn
+let g:pyclewn_terminal = "xterm, -e"
 " Airline Configuration
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#enabled = 1
