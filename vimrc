@@ -1,18 +1,11 @@
 set nocompatible
 set hidden
 filetype off
-<<<<<<< HEAD
 "Remapping leader key from default '\' to ','
-=======
->>>>>>> bf47e4f7f3bbe50565e9135b6fff6420c28eb800
 let mapleader=","
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-<<<<<<< HEAD
-=======
-
->>>>>>> bf47e4f7f3bbe50565e9135b6fff6420c28eb800
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
@@ -23,12 +16,7 @@ Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'vimwiki/vimwiki'
-<<<<<<< HEAD
 Plugin 'mhinz/vim-startify'
-=======
-Plugin 'itchyny/calendar.vim'
-"Plugin 'Valloric/YouCompleteMe'
->>>>>>> bf47e4f7f3bbe50565e9135b6fff6420c28eb800
 call vundle#end()
 filetype plugin indent on
 
@@ -55,19 +43,11 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height = 2
 
-<<<<<<< HEAD
-=======
-" Vim-bookmarks configuration options
-" let g:bookmark_auto_save_file="~/.vim-bookmarks-list"
->>>>>>> bf47e4f7f3bbe50565e9135b6fff6420c28eb800
 syntax on
 set foldmethod=indent
 set foldlevel=99
 set t_Co=256
-<<<<<<< HEAD
 " Tab spacing requirements
-=======
->>>>>>> bf47e4f7f3bbe50565e9135b6fff6420c28eb800
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -97,16 +77,10 @@ set backspace=indent,eol,start
 set list
 set listchars=tab:\|\ 
 set tags=./tags;/
-<<<<<<< HEAD
 " Backup, swap, and undo directories
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
-=======
-
->>>>>>> bf47e4f7f3bbe50565e9135b6fff6420c28eb800
-
-"autocmd VimEnter * Tagbar
 
 " Support Calling ranger interface within VIM session
 function RangerExplorer()
