@@ -1,11 +1,11 @@
 set nocompatible
 set hidden
 filetype off
+"Remapping leader key from default '\' to ','
 let mapleader=","
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
@@ -16,12 +16,10 @@ Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'vimwiki/vimwiki'
-Plugin 'itchyny/calendar.vim'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'mhinz/vim-startify'
 call vundle#end()
 filetype plugin indent on
-" PyClewn
-let g:pyclewn_terminal = "xterm, -e"
+
 " Airline Configuration
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#enabled = 1
@@ -45,12 +43,11 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height = 2
 
-" Vim-bookmarks configuration options
-" let g:bookmark_auto_save_file="~/.vim-bookmarks-list"
 syntax on
 set foldmethod=indent
 set foldlevel=99
 set t_Co=256
+" Tab spacing requirements
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -80,7 +77,10 @@ set backspace=indent,eol,start
 set list
 set listchars=tab:\|\ 
 set tags=./tags;/
-
+" Backup, swap, and undo directories
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
 
 "autocmd VimEnter * Tagbar
 
